@@ -15,12 +15,12 @@ spec:
     spec:
       containers:
       - name: app
-        image: ghcr.io/oraklovich/k8s-python-app:v1.0.0
+        image: ghcr.io/oraklovich/k8s-python-app:v1.0.1
         ports:
         - containerPort: 5000
         env:
         - name: APP_VERSION
-          value: "v1.0.0"
+          value: "v1.0.1"
         resources:
           requests:
             memory: "64Mi"

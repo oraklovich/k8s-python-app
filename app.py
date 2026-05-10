@@ -8,10 +8,7 @@ app = Flask(__name__)
 def hello():
     hostname = socket.gethostname()
     version = os.environ.get('APP_VERSION', 'v1.0.0')
-    return f"<h3>Hello from Kubernetes!</h3>"
-             f"<b>Pod:</b> {hostname}<br>"
-             f"<b>Version:</b> {version}<br>"
-             f"<b>Cluster:</b> MacBook Air K3s"
+    return f"<h3>Hello from Kubernetes!</h3>"            f"<b>Pod:</b> {hostname}<br>"            f"<b>Version:</b> {version}<br>"            f"<b>Cluster:</b> MacBook Air K3s"
 
 @app.route('/health')
 def health():
